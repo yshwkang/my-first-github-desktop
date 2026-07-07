@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="개인 포트폴리오 웹사이트">
+  <title>Portfolio | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">P</span>
+        <span class="logo__text">Portfolio</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80"
+          alt="코딩 작업 환경"
+          class="hero__image"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__greeting">안녕하세요, 저는</p>
+        <h1 class="hero__title">웹 개발자 <span class="hero__highlight">Your Name</span>입니다</h1>
+        <p class="hero__desc">
+          사용자 경험을 중시하는 반응형 웹사이트를 만듭니다.<br>
+          HTML, CSS, JavaScript로 아이디어를 현실로 구현합니다.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
+          <a href="#contact" class="btn btn--outline">연락하기</a>
+        </div>
+      </div>
+      <a href="#projects" class="hero__scroll" aria-label="아래로 스크롤">
+        <span class="hero__scroll-icon"></span>
+      </a>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Projects</span>
+          <h2 class="section__title">최근 작업</h2>
+          <p class="section__desc">직접 기획하고 개발한 프로젝트들입니다.</p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                alt="대시보드 프로젝트"
+                class="project-card__image"
+              >
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="프로젝트 1 상세 보기">View</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Web App</span>
+              <h3 class="project-card__title">Analytics Dashboard</h3>
+              <p class="project-card__desc">
+                실시간 데이터 시각화 대시보드. Chart.js와 REST API를 활용한 관리자 패널입니다.
+              </p>
+              <div class="project-card__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+                alt="코드 에디터 프로젝트"
+                class="project-card__image"
+              >
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="프로젝트 2 상세 보기">View</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Tool</span>
+              <h3 class="project-card__title">Code Snippet Manager</h3>
+              <p class="project-card__desc">
+                자주 쓰는 코드 스니펫을 저장하고 검색하는 도구. LocalStorage 기반으로 동작합니다.
+              </p>
+              <div class="project-card__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80"
+                alt="모바일 앱 프로젝트"
+                class="project-card__image"
+              >
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="프로젝트 3 상세 보기">View</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Mobile First</span>
+              <h3 class="project-card__title">Weather App</h3>
+              <p class="project-card__desc">
+                OpenWeather API를 활용한 날씨 앱. 모바일 우선 반응형 디자인으로 제작했습니다.
+              </p>
+              <div class="project-card__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <span class="section__label">Contact</span>
+            <h2 class="section__title">함께 일해요</h2>
+            <p class="section__desc">
+              새로운 프로젝트, 협업, 또는 궁금한 점이 있으시면 편하게 연락해 주세요.
+            </p>
+            <ul class="contact__details">
+              <li>
+                <span class="contact__icon">✉</span>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+              </li>
+              <li>
+                <span class="contact__icon">📍</span>
+                <span>Seoul, South Korea</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">이름</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="홍길동" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">이메일</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="hello@example.com" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">메시지</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="메시지를 입력해 주세요." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">메시지 보내기</button>
+            <p class="form-success" id="formSuccess" hidden>메시지가 성공적으로 전송되었습니다!</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Your Name. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
